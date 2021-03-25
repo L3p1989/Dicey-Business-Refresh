@@ -2,10 +2,14 @@
 class Die {
   constructor() {
     this.newDie = $(`<div class="die"></div>`);
-    this.value = Math.floor(Math.random() * 6) + 1;
-    this.newDie.text(this.value).appendTo(`#die-div`);
+    this.value = this.roll();
+    this.newDie.click(() => this.roll());
+    this.newDie.appendTo(`#die-div`);
   }
   roll() {
-    let sum = Math.floor(Math.random() * 6) + 1;
+    this.value = Math.floor(Math.random() * 6) + 1;
+    this.newDie.text(this.value);
   }
 }
+//give die-btn click listener
+$(`#die-btn`).click(() => new Die());
