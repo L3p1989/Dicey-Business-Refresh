@@ -3,6 +3,10 @@
   color: #03a062;
 }
 
+h1 {
+  text-align: center;
+}
+
 .container {
   display: flex;
   justify-content: center;
