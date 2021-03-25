@@ -4,6 +4,7 @@ class Die {
     this.newDie = $(`<div class="die"></div>`);
     this.value = this.roll();
     this.newDie.click(() => this.roll());
+    this.newDie.dblclick(() => this.newDie.remove());
     this.newDie.appendTo(`#die-div`);
   }
   roll() {
