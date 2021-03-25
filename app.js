@@ -32,3 +32,5 @@ class Die {
 $(`#die-btn`).click(() => new Die());
 //give roll-btn click handler
 $(`#roll-btn`).click(() => Die.rollAll());
+//give sum-btn click handler
+$(`#sum-btn`).click(() => Die.getSum());
