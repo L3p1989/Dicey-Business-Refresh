@@ -10,6 +10,7 @@ h1 {
 .container {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 .btn {
@@ -23,4 +24,13 @@ h1 {
   user-select: none;
   line-height: 1.42857143;
   margin: auto;
+}
+
+.die {
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  text-align: center;
+  line-height: 6;
+  border-radius: 16%;
 }
